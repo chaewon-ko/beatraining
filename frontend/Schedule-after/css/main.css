@@ -9,12 +9,14 @@ body {
   font-size: 14px;
 }
 .v139_433 {
+  overflow: hidden;
   width: 100%;
   height: 1024px;
 
 /* background */
 
 background: linear-gradient(299.78deg, #353939 -4.27%, #5E5E5E 103.07%, #444848 103.08%);
+
 }
 .v197_3 {
   width: 273px;
