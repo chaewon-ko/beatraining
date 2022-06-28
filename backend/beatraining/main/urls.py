@@ -5,5 +5,5 @@ urlpatterns = [
     path('', views.home_logout, name="home_logout"),
     path('home_login/', views.home_login, name='home_login'),
     path('ranking/', views.ranking, name="ranking"),
-    path('login/', include('account.urls')),
+    path('schedule/', include('scheduler.urls')),
 ]
