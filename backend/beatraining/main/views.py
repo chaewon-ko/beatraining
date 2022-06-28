@@ -4,7 +4,11 @@ from django.shortcuts import render
 
 
 def home_logout(request):
-    return render(request, 'base.html')
+    return render(request, 'home_logout.html')
+
+
+def home_login(request):
+    return render(request, 'home_login.html')
 
 
 def ranking(request):
