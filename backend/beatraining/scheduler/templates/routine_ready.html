@@ -2,27 +2,16 @@
 {%load static %}
 
 {% block content %}
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
         <link href="{% static '/routine-ready/css/main.css' %}" rel="stylesheet" />
         <title>Beat-Training</title>
-        <script type="text/javascript" src="{% static '/components/components.js' %}"></script>
         <script type="text/javascript" src="{% static '/routine-ready/form.js' %}"></script>
-        <link href="{% static '/components/css/components.css' %}" rel="stylesheet" />
-    </head>
-    <body>
-            
-        <bt-head></bt-head>
         <div class="write-text">
             <span class="text1">운동이름</span>
             <span class="text2">강도</span>
             <span class="text3">횟수</span>
             <span class="text4">시간</span>
         </div>
-        <form id="my-form" action="test.php" method="get">
+        <form id="my-form" action="" method="get">
                 <div class="write-box">
                 <input class="name-input" type="text" name="name" id="name" autocomplete="off">
                 <select class="power-input" name="power" id="power">
@@ -38,15 +27,11 @@
                 </div>
                 </div>
                 <input class="submit-button" type="submit" value=" ">
-
         </form>
         
         <script src="{% static '/routine-ready/form.js' %}"></script>
 
         <a href="다음 페이지"><button class="finish">운동 루틴 작성 완료</button></a>
-        <bt-footer></bt-footer>
         <p>이밑으로 추가</p>
-    </body>
-</html>
 
 {% endblock %}

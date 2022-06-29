@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'scheduler',
-    'account',
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [

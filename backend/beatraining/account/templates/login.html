@@ -1,7 +1,46 @@
-<form action="{% url 'login' %}" method="POST">
-    {% csrf_token %}
-    username : <input type='text' name='username'><br/>
-    password : <input type='password' name='password'>
-    <br/>
-    <input type="submit" value="로그인">
-</form>
+{% extends 'base.html' %}
+{%load static %}
+{% block header %}
+<link href="{% static 'log in/css/main.css' %}" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<head>
+<title>비트레이닝: 로그인</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="wrapper">
+            <div class="titleBox">
+                <span class="titleText">로그인</span>
+            </div>
+            <input id="userid" type="text" placeholder="아이디">
+            <input id="userpw" type="password" placeholder="비밀번호">
+            <div class="snf">
+                <input type="checkbox" id="save">
+                <label for="save"></label>
+                <span style="margin-right: 159px; padding-top: 2px">아이디 저장하기</span>
+                <span style="padding-top: 2px">아이디 찾기 ㅣ 비밀번호 찾기 ㅣ 회원가입</span>
+            </div>
+            <!-- 로그인-홈으로 이동 -->
+            <a href="/home-login/index.html">
+                <div class="logInBox">
+                    <span class="logInText">로그인 하기</span>
+                </div>
+            </a>
+            <div class="imgs">
+                <img class="naver" src="{% static 'log in/images/naver.png' %}">
+                <img src="{% static 'log in/images/kakao.png' %}">
+                <img src="{% static 'log in/images/google.png' %}">
+            </div>
+            <div class="imgtxt">
+                <span class="nav">네이버 로그인</span>
+                <span class="ka">카카오 로그인</span>
+                <span class="goo">구글 로그인</span>
+        </div>    
+    </div>
+</body>
+
+{% endblock %}
