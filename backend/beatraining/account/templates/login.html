@@ -16,20 +16,19 @@
             <div class="titleBox">
                 <span class="titleText">로그인</span>
             </div>
-            <input id="userid" type="text" placeholder="아이디">
-            <input id="userpw" type="password" placeholder="비밀번호">
-            <div class="snf">
-                <input type="checkbox" id="save">
-                <label for="save"></label>
-                <span style="margin-right: 159px; padding-top: 2px">아이디 저장하기</span>
-                <span style="padding-top: 2px">아이디 찾기 ㅣ 비밀번호 찾기 ㅣ 회원가입</span>
-            </div>
-            <!-- 로그인-홈으로 이동 -->
-            <a href="/home-login/index.html">
-                <div class="logInBox">
-                    <span class="logInText">로그인 하기</span>
+            <form action="{% url 'login' %}" method="POST">
+                {% csrf_token %}
+                <input id="userid" type="text" placeholder="아이디" name="username">
+                <input id="userpw" type="password" placeholder="비밀번호" name="password">
+                <div class="snf">
+                    <input type="checkbox" id="save">
+                    <label for="save"></label>
+                    <span style="margin-right: 159px; padding-top: 2px">아이디 저장하기</span>
+                    <span style="padding-top: 2px">아이디 찾기 ㅣ 비밀번호 찾기 ㅣ 회원가입</span>
                 </div>
-            </a>
+                <input type="submit" value="로그인 하기">
+            </form>
+            <!-- 로그인-홈으로 이동 -->
             <div class="imgs">
                 <img class="naver" src="{% static 'log in/images/naver.png' %}">
                 <img src="{% static 'log in/images/kakao.png' %}">
