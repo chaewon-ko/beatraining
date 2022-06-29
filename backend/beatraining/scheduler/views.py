@@ -1,15 +1,21 @@
 from django.shortcuts import render
-from . import urls
 
 
 def scheduler(request):
     return render(request, '1.html')
 
-def schedulerbefore(request):
+
+def scheduler_before(request):
     return render(request, 'scheduler_before.html')
 
-def schedulerafter(request):
+
+def scheduler_after(request):
     return render(request, 'scheduler_after.html')
 
-def routineready(request):
+
+def routine_ready(request):
     return render(request, 'routine_ready.html')
+
+
+def training(request):
+    return render(request, 'training.html')

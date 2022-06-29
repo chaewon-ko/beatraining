@@ -1,10 +1,10 @@
 from django import views
 from django.urls import path
-from scheduler import views
 from . import views
 urlpatterns = [
     path('', views.scheduler),
-    path('schedule-before/', views.schedulerbefore),
-    path('schedule-after/', views.schedulerafter),
-    path('routine_ready/', views.routineready),
+    path('scheduler-before/', views.scheduler_before, name='scheduler_before'),
+    path('scheduler-after/', views.scheduler_after, name='scheduler_after'),
+    path('routine_ready/', views.routine_ready, name='routine_ready'),
+    path('training/', views.training, name='training')
 ]

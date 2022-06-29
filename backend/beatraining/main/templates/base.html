@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static '/components/css/components.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="">
-    <title>Beatraining</title>
     {% block header %}
     {% endblock %}
 </head>
@@ -17,7 +17,7 @@
         <div class="v203_2022"></div>
         <a href="{% url 'home_logout' %}"><span class="BT"></span></a>
         <a href="#"><span class="menu1">비트레이닝이란?</span></a>
-        <a href="#"><span class="menu2">운동 스케쥴러</span></a>
+        <a href="{% url 'scheduler_before' %}"><span class="menu2">운동 스케쥴러</span></a>
         <a href="#"><span class="v203_2026">추천 운동 루틴</span></a>
         <a href="#"><span class="v203_2027">나의 그룹</span></a>
         <a href="#"><span class="v203_2028">학교별 랭킹</span></a>

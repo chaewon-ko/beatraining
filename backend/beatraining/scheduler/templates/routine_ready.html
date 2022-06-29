@@ -1,10 +1,21 @@
 {% extends 'base.html' %}
 {%load static %}
+<!-- header block -->
+{% block header %}
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="{% static '/routine-ready/css/main.css' %}" rel="stylesheet" />
+    <script type="text/javascript" src="{% static '/routine-ready/form.js' %}"></script>
+{% endblock %}
 
+
+<!-- content block -->
 {% block content %}
+<<<<<<< HEAD
         <link href="{% static '/routine-ready/css/main.css' %}" rel="stylesheet" />
         <title>Beat-Training</title>
         <script type="text/javascript" src="{% static '/routine-ready/form.js' %}"></script>
+=======
+>>>>>>> 1cc2e9dbc95b26f1da9e49859912727c5a46f66a
         <div class="write-text">
             <span class="text1">운동이름</span>
             <span class="text2">강도</span>
@@ -28,10 +39,15 @@
                 </div>
                 <input class="submit-button" type="submit" value=" ">
         </form>
+<<<<<<< HEAD
         
         <script src="{% static '/routine-ready/form.js' %}"></script>
 
         <a href="다음 페이지"><button class="finish">운동 루틴 작성 완료</button></a>
+=======
+        <a href="{% url 'training' %}"><button class="finish">운동 루틴 작성 완료</button></a>
+        <bt-footer></bt-footer>
+>>>>>>> 1cc2e9dbc95b26f1da9e49859912727c5a46f66a
         <p>이밑으로 추가</p>
 
 {% endblock %}
