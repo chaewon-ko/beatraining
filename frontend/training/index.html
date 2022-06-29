@@ -48,30 +48,26 @@
                     </div>
                 </div>
             </div> 
-
             <div class="music">
-                <audio>
-                    
-                </audio>
+                <audio src="" controls="controls" style="width: 596px; margin: 32px 0px 0px 52px;"></audio>
                 <div class="shuffle">
                     <img src="./img/shuffle.png" class="shfImg">
                 </div>
             </div>
-
-            <script>
-                function doneBtn1() {
-                    document.getElementById("check1").style.display = "inline-block";
-                    // 노래 볼륨 줄이기
-                    // 세트별 시계를 세트간 휴식 타이머로 바꾸고 실행시키기
-                    // 타이머 끝나면 다시 세트별 시계로, 볼륨도 원상복귀
-                }        
-                function doneBtn2() {
-                    document.getElementById("check2").style.display = "inline-block";
-                    // 노래 볼륨 줄이기
-                    // 세트별 시계를 세트간 휴식 타이머로 바꾸고 실행시키기
-                    // 타이머 끝나면 다시 세트별 시계로, 볼륨도 원상복귀
-                } 
-            </script>
         </div>
     </div>
+    <script>
+        function doneBtn1() {
+            document.getElementById("check1").style.display = "inline-block";
+            // 노래 볼륨 줄이기
+            // 세트별 시계를 세트간 휴식 타이머로 바꾸고 실행시키기            
+            // 타이머 끝나면 다시 세트별 시계로, 볼륨도 원상복귀
+        }        
+        function doneBtn2() {
+            document.getElementById("check2").style.display = "inline-block";
+            // 노래 볼륨 줄이기
+            // 세트별 시계를 세트간 휴식 타이머로 바꾸고 실행시키기            
+            // 타이머 끝나면 다시 세트별 시계로, 볼륨도 원상복귀
+        } 
+    </script>
 </body>
