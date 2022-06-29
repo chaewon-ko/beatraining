@@ -1,6 +1,10 @@
 {% extends 'base.html'%}
-{% block content %}
+{% load static %}
+{% block header %}
+<link rel="stylesheet" href="{% static '/home-logout/css/main.css'%}">
+{% endblock %}
 
+{% block content %}
     <div class="v197_1689">
         <div class="v139_13"></div>
         <div class="v139_14"></div>
@@ -19,7 +23,7 @@
         <div class="main-line3"></div>
     </div>
     <img class="logo"
-    src="./images/beaTraining.png">
+    src="{% static '/home-logout/images/beaTraining.png' %}">
     <a href="루틴 시작 링크"><img class="be-training"
-    src="./images/Group 178.png"></a>
+    src="{% static '/home-logout/images/Group 178.png' %}"></a>
 {% endblock %}
