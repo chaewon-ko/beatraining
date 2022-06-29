@@ -16,11 +16,3 @@
                 //파트4. 제출 이벤트로 인한 새로고침 방지
                 return false;
               }
-
-              
-            function onDisplay(){
-                document.getElementById('set2').style.visibility = "visible"
-            }
-            function offDisplay(){
-                document.getElementById('set2').style.visibility = "hidden";
-            }
