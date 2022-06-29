@@ -1,16 +1,14 @@
 {% extends 'base.html' %}
+{% load static %}
+
+<!-- header section -->
+{% block header %}
+<link href="{% static '/Schedule-before/css/main.css' %}" rel="stylesheet" />
+{% endblock %}
+
+<!-- content section -->
 {% block content %}
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-        <link href="{% static '/Scheduler-before/css/main.css' %}" rel="stylesheet" />
-        <title>Document</title>
-        <script type="{% static 'text/javascript" src="{% static '/components/components.js' %}"></script>
-        <link href="{% static '/components/css/components.css' %}" rel="stylesheet" />
-    </head>
-    <body>
         <div class="v139_433">
             <bt-head></bt-head>
             <div class="v197_3">
@@ -87,10 +85,6 @@
             <span class="v197_151">18</span>
             <span class="v197_158">25</span>
             <div class="schedule-write-box"></div>
-            <a href= "http://facebook.com"><span class="schedule-write">운동 루틴 작성하기</span></a>
+            <a href= "{% url 'routine_ready' %}"><span class="schedule-write">운동 루틴 작성하기</span></a>
         </div>
-        <bt-footer></bt-footer>
-    </body>
-</html>
-
 {% endblock %}

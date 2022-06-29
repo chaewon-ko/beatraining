@@ -1,22 +1,13 @@
 {% extends 'base.html' %}
-{% block content %}
+{% load static %}
+{% block header %}
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="{% static '/Schedule-after/css/main.css' %}" rel="stylesheet" />
+{% endblock %}
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-        <link href="{% static '/Scheduler-after/css/main.css' %}" rel="stylesheet" />
-        <script type="{% static 'text/javascript' %}" src="{% static '../components/components.js' %}"></script>
-        <link href="{% static '../components/css/components.css' %}" rel="stylesheet" />
-        <title>Document</title>
-    </head>
-    <body>
-        
-        
+{% block content %}
         <div class="v139_433">
-            <bt-head></bt-head>
             <div class="v197_3">
-                
                 <div class="v197_5"></div>
             </div>
             <span class="v197_4">자신의 운동 일정과 루틴을 관리해보세요.</span>
@@ -89,8 +80,4 @@
             <span class="v197_151">18</span>
             <span class="v197_158">25</span>
         </div>
-        <bt-footer></bt-footer>
-    </body>
-</html>
-
-{% block content %}
+{% endblock %}
