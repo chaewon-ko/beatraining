@@ -10,7 +10,7 @@ var swiper = new Swiper( '.swiper-container', {
   coverflow: {
     rotate: 0,
     stretch: 100,
-    depth: 250,
+    depth: 180,
     modifier: 1.5,
     slideShadows : false,
   },
