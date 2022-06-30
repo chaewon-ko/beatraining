@@ -7,4 +7,5 @@ urlpatterns = [
     path('ranking/', views.ranking, name="ranking"),
     path('schedule/', include('scheduler.urls')),
     path('account/', include('account.urls')),
+    path('group/', views.group, name='group')
 ]

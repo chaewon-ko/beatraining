@@ -1,12 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranking</title>
-</head>
-<body>
-    <h1>Ranking</h1>
-</body>
-</html>
+   {% extends 'base.html' %}
+   {% load static %}
+   {% block header %}
+    <link rel="stylesheet" href="{% static 'Rank/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'Rank/css/card.css' %}">
+   {% endblock header %}
+    
+   
+   {% block content %}
+   <p></p>
+        
+        <div class="title-box">학교별 랭킹</div>
+        <div class="title-line"></div>
+
+        <p class="title-text">학교별로 운동 완료 인원이 많은 곳을 기준으로 순위를 보여줍니다.<br>
+            열심히 운동하는 건강한 학교가 되어보세요!</p>
+            
+        <p></p>
+        <img src="{% static 'Rank/images/Group 205.png' %}">
+        <p></p>
+        <img src="{% static 'Rank/images/Group 206.png' %}">
+   {% endblock content %}
+    

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+<title>beatraining: 운동 결과</title>
+<link rel="stylesheet" href="{% static 'routine-result/css/main.css' %}">
+<link rel="stylesheet" href="{% static 'routine-result/css/card.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="title-box">운동 완료!</div>
+    <div class="title-line"></div>
+
+    <p class="title-text">오늘 완료한 운동입니다.</p>
+    
+    <img src="{% static 'routine-result/images/Group 195.png' %}">
+
+    <a class="finish-link" href="{% url 'scheduler_after' %}"><div class="box">운동 루틴 작성 완료</div></a>
+{% endblock content %}
+    

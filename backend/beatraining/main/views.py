@@ -13,3 +13,7 @@ def home_login(request):
 
 def ranking(request):
     return render(request, 'ranking.html')
+
+
+def group(request):
+    return render(request, 'group.html')

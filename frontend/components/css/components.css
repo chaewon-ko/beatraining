@@ -128,15 +128,13 @@ footer{
 
 
 .footer-box {
-  
   z-index: -50;
   width: 100%;
   height: 143px;
   background: rgba(231,231,231,1);
   opacity: 1;
   overflow: hidden;
-padding:20px;
-  
+  padding:20px;
 }
 .text-up {
   width: 100px;

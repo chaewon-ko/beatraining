@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beatraining: 이전루틴불러오기</title>
+    <link href="./css/coverflow.css" rel="stylesheet" />
+    <link href="./css/card.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+</head>
+<body>    
+    <div class="page">
+        <div class="wrapper">
+
+            <div class="write-text">
+                <span class="text1">운동이름</span>
+                <span class="text2">강도</span>
+                <span class="text3">횟수</span>
+                <span class="text4">시간</span>
+            </div>
+            <form class="my-form" id="my-form" action="test.php" method="get">
+                <div class="write-box">
+                    <input class="name-input" type="text" name="name" id="name" autocomplete="off">
+                    <select class="power-input" name="power" id="power">
+                        <option value="high"> 고강도
+                        <option value="medium" selected> 중강도
+                        <option value="low"> 저강도
+                    </select>
+                    <div class="checkbtn one"></div>
+                    <div class="checkbtn two"></div>
+                </div>
+                <div class="submit-button">
+                    <img src="./images/plus.png" class="plusimg">
+                </div>
+            </form>
+            <div class="previous"><p class=load>이전 루틴 불러오기</p></div>
+
+            <div class="slide">
+                <div class="btn rBtn">
+                    <img src="./images/right.png" class="swiper">
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Group 200.png"></div>
+                        <div class="swiper-slide"><img src="images/Group 201.png"></div>
+                        <div class="swiper-slide"><img src="images/Group 202.png"></div>
+                        <div class="swiper-slide"><img src="images/Group 203.png"></div>
+                        <div class="swiper-slide"><img src="images/Group 204.png"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="btn">
+                    <img src="./images/left.png" class="swiper">
+                </div>
+            </div>
+        <!-- 휴식 루틴 작성 페이지로 이동 -->
+        <a class="finish-link" href="다음 페이지">
+            <div class="finish">
+                <p class=completed>운동 루틴 작성 완료</p>
+            </div>
+        </a>
+        <!--------------------------->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="./js/coverflow.js"></script>  
+</body>
+</html>
+
+</body>
