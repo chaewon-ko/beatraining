@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block header %}
+<link href="{% static 'sign up/css/main.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<body>
+    <div class="page">
+        <div class="wrapper">
+            <div class="titleBox">
+                <span class="titleText">회원가입</span>
+            </div>
+            <div class ="inputBox" id="nameBox">
+                <div class="boxTitle">이름</div>
+                <input id="name" type="text" placeholder="이름">
+            </div>
+            <div class="inputBox" id="idBox">
+                <div class="boxTitle">아이디</div>
+                <input id="id" type="text" placeholder="아이디">
+            </div>
+            <div class="inputBox" id="pwBox">
+                <div class="boxTitle">비밀번호</div>
+                <input id="pw" type="password" placeholder="비밀번호">
+            </div>
+            <div class="inputBox" id="pwCheckBox">
+                <div class="boxTitle">비밀번호 확인</div>
+                <input id="pwCheck" type="password" placeholder="비밀번호 확인">
+            </div>
+            <div class="inputBox" id= digitsBox>
+                <div class="boxTitle">전화번호</div>
+                <input id="digits1" type="text" placeholder="010">
+                <span class="dash1">-</span>
+                <input id="digits2" type="text">
+                <span class="dash2">-</span>
+                <input id="digits3" type="text">
+            </div>
+            <div class="inputBox" id="emailBox">
+                <div class="boxTitle">이메일</div>
+                <input id="emailId" type="text">
+                <span class="at">@</span>
+                <input id="addr" type="text" placeholder="naver.com">
+            </div>
+            <div class="inputBox" id="univBox">
+                <div class="boxTitle">학교</div>
+                <input id="univ" type="text">
+                <span class="cert">학교 인증</span>
+            </div>
+            <!-- 회원가입 페이지로 이동 -->
+            <a href="{% url 'signup_done' %">
+                <div class="signUpBox">
+                    <span class="signUpText">가입하기</span>
+                </div>
+            </a>
+        </div>    
+    </div>
+</body>
+{% endblock %}

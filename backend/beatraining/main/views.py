@@ -17,3 +17,6 @@ def ranking(request):
 
 def group(request):
     return render(request, 'group.html')
+
+def mypage(request):
+    return render(request, 'mypage.html')

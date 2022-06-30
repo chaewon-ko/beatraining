@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block header %}
+{% endblock %}
+
+{% block content %}
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+        <link href="{% static 'Mypage/css/main.css' %}" rel="stylesheet" />
+        <title>Beat-Training</title>
+        <script type="text/javascript" src="{% static '../components/components.js' %}"></script>
+        <script type="text/javascript" src="{% static 'form.js' %}"></script>
+        <link href="{% static '../components/css/components.css' %}" rel="stylesheet" />
+        <link href="./css/card.css" rel="stylesheet" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <bt-head></bt-head>
+        <img src="{% static 'Mypage/images/Group 207.png' %}">
+
+        <bt-footer></bt-footer>
+    </body>
+
+{% endblock %}

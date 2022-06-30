@@ -24,3 +24,9 @@ def login(request):
 def logout(request):
     auth.logout(request)
     return redirect('home')
+
+def signup(request):
+    return render(request, 'signup.html')
+
+def signup_done(request):
+    return render(request, 'signup_done.html')
