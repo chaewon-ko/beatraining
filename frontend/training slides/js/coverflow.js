@@ -1,10 +1,6 @@
 var swiper = new Swiper( '.swiper-container', {
   pagination: '.swiper-pagination',
   paginationClickable: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
   effect: 'coverflow',
   loop: false,
   centeredSlides: true,

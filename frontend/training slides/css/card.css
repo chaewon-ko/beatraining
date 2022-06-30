@@ -10,7 +10,11 @@
     width: 408px;
     height: 117px;
 }
-
+.lastCard {
+    background-color: rgba(203,203,203,1);
+    width: 408px;
+    height: 526px;
+}
 .title{
     color: #FFFFFF;
     font-weight: 700;
