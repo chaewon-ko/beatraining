@@ -2,9 +2,12 @@ var setTime = 0;
 var workoutTime = 0;
 var min = 0;
 var sec = 0;
-var setTimer;
-
-var setTimer = setInterval(function() {
+const GV = {
+    isPause: false,
+    timer: null
+}
+GV.isPause = false;
+GV.timer = setInterval(function() {
     setTime ++;
     min = parseInt(setTime/60);
     sec = setTime%60;
@@ -18,13 +21,15 @@ setInterval(function() {
     document.getElementById("workoutTimer").innerHTML = min + "분 " + sec + "초";
 },1000);
 
-$("#doneBtn1").click(function(){
-    clearInterval(setTimer)
+const setrest = $('#doneBtn1').one('click', function(){
     document.getElementById("check1").style.display = "inline-block";
+
+    clearInterval(GV.timer);
+    GV.isPause = false;    
     
     var setRest = 10;
 
-    var x = setInterval(function() {
+    GV.timer  = setInterval(function() {
         document.getElementById("setTimer").style.color = "rgba(29, 255, 187, 0.56)"
         min = parseInt(setRest/60);
         sec = setRest%60;
@@ -32,7 +37,7 @@ $("#doneBtn1").click(function(){
         setRest --;
         
         if (setRest < 0){
-            clearInterval(x);
+            clearInterval(GV.timer);
             document.getElementById("setTimer").innerHTML = "0분 0초";
             setInterval(function() {
                 setRest ++;
@@ -45,13 +50,16 @@ $("#doneBtn1").click(function(){
     }, 1000);
 });
 
-$("#doneBtn2").click(function(){
+
+const rest = $("#doneBtn2").click(function(){
+    clearInterval(GV.timer);
+    GV.isPause = true;
     document.getElementById("check2").style.display = "inline-block";
 
     setTimeout(function() {
         document.getElementById("slide1").innerHTML ='<img src="img/1-1.png">';
         var intervalRest = 60;
-        var y = setInterval(function() {
+        let x = setInterval(function() {
             document.getElementById("setTimer").style.color = "rgba(29, 255, 187, 0.56)"
             min = parseInt(intervalRest/60);
             sec = intervalRest%60;
@@ -59,9 +67,8 @@ $("#doneBtn2").click(function(){
             intervalRest --;
             
             if (intervalRest < 0){
-                clearInterval(y);
+                clearInterval(x);
                 document.getElementById("setTimer").innerHTML = "0분 0초";
-                document.getElementById("setTimer").style.color = "#FFFFFF"
             }
         }, 1000);
     }, 1000);
