@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beatraining: 운동슬라이드</title>
+    <link href="./css/coverflow.css" rel="stylesheet" />
+    <link href="./css/card.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+</head>
+<body>
+    <div class="page">
+        <div class="wrapper">
+            <div id="setTimer">0분 00초</div>
+            <div id="workoutTimer">0분 00초</div>
+
+        <div class="slide">
+            <!-- 운동 완료 페이지로 넘어가는 링크 -->
+            <a href="">
+                <div class="btn rBtn">
+                    <img src="./img/right.png" class="swiper">
+                </div> 
+            </a>
+            <!------------------------------->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="slide1">
+                        <div class="container radius__all">
+                            <div class="header radius__top">
+                                <p class="title">스트레칭</p>
+                                <p class="desc">저강도 | 120bpm</p>
+                            </div>
+                            <div class="content">
+                                <p class="set">세트</p>
+                                <p class="time">시간(분)</p>
+                                <p class="done">완료</p>
+                            </div>
+                            <div class="set__container radius__circle" id="set1">
+                                <div class="set__counter font">1</div>
+                                <div class="time__counter font">10</div>
+                                <button id="doneBtn1">
+                                    <img src="./img/checked.png" id="check1" style="display: none; width: 18px; height: 13px;">
+                                </button>
+                            </div>
+                            <div class="set__container radius__circle" id="set2">
+                                <div class="set__counter font">1</div>
+                                <div class="time__counter font">10</div>
+                                <button id="doneBtn2">
+                                    <img src="./img/checked.png" id="check2" style="display: none; width: 18px; height: 13px;">
+                                </button>
+                            </div>
+                            <div class="cardFooter">
+                                <div class="left">
+                                    <p class="delete">-세트 삭제</p>
+                                </div>
+                                <div class="right">
+                                    <p class="add">+세트 추가</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="swiper-slide"><img src="img/2.png"></div>
+                    <div class="swiper-slide"><img src="img/3.png"></div>
+                    <div class="swiper-slide"><img src="img/4.png"></div>
+                    <div class="swiper-slide"><img src="img/5.png"></div>
+                    <div class="swiper-slide"><img src="img/6.png"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="btn">
+                <img src="./img/left.png" class="swiper">
+            </div>
+        </div>
+            <div class="music">
+                <audio src="" controls="controls" style="width: 596px; margin: 0px 0px 0px 52px;"></audio>
+                <div class="shuffle">
+                    <img src="./img/shuffle.png" class="shfImg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/coverflow.js"></script>  
+    <script src="./js/timer.js"></script>
+</body>
+</html>
+
+</body>
