@@ -13,11 +13,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 1169px;
-<<<<<<< HEAD:frontend/training slides/css/coverflow.css
     background-image : url('../img/background.png'),linear-gradient(299.78deg, #353939 -4.27%, #5E5E5E 103.07%, #444848 103.08%);
-=======
-    background-image : url('../training/img/background.png'),linear-gradient(299.78deg, #353939 -4.27%, #5E5E5E 103.07%, #444848 103.08%);
->>>>>>> 31f9a06cb7a1d869683f7f8bbea8ac3dc2c4d577:frontend/training slides/coverflow.css
     background-repeat: no-repeat, no-repeat;
     background-position: center 469px, center;
     opacity: 1;
