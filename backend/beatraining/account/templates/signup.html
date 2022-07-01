@@ -11,21 +11,23 @@
             <div class="titleBox">
                 <span class="titleText">회원가입</span>
             </div>
+            <form action="{% url 'signup' %}" method="POST">
+                {% csrf_token %}
             <div class ="inputBox" id="nameBox">
                 <div class="boxTitle">이름</div>
                 <input id="name" type="text" placeholder="이름">
             </div>
             <div class="inputBox" id="idBox">
                 <div class="boxTitle">아이디</div>
-                <input id="id" type="text" placeholder="아이디">
+                <input id="id" type="text" placeholder="아이디" name="username">
             </div>
             <div class="inputBox" id="pwBox">
                 <div class="boxTitle">비밀번호</div>
-                <input id="pw" type="password" placeholder="비밀번호">
+                <input id="pw" type="password" placeholder="비밀번호" name="password">
             </div>
             <div class="inputBox" id="pwCheckBox">
                 <div class="boxTitle">비밀번호 확인</div>
-                <input id="pwCheck" type="password" placeholder="비밀번호 확인">
+                <input id="pwCheck" type="password" placeholder="비밀번호 확인" name="confirm">
             </div>
             <div class="inputBox" id= digitsBox>
                 <div class="boxTitle">전화번호</div>
@@ -46,12 +48,14 @@
                 <input id="univ" type="text">
                 <span class="cert">학교 인증</span>
             </div>
+            <input class="signUpBox" type="submit" value="가입하기" style="color:white">
+        </form>
             <!-- 회원가입 페이지로 이동 -->
-            <a href="{% url 'signup_done' %">
+            <!-- <a href="{% url 'signup_done' %">
                 <div class="signUpBox">
                     <span class="signUpText">가입하기</span>
                 </div>
-            </a>
+            </a> -->
         </div>    
     </div>
 </body>

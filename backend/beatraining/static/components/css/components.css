@@ -9,7 +9,7 @@
   height : 100%;
 }
 footer{
-  margin-top: 200px;
+  margin-top: 100%;
   margin-bottom:0px;
 }
 .v203_2022 {
@@ -231,4 +231,18 @@ footer{
   font-size: 12px;
   opacity: 1;
   text-align: left;
+}
+.logout {
+ width: 184px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 705px;
+  left: 628px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  opacity: 1;
+  text-align: center;
 }
