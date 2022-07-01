@@ -6,7 +6,8 @@
 {% endblock %}
 
 {% block content %}
-        <div class="v139_433">
+          <div class="v139_433">
+            <bt-head></bt-head>
             <div class="v197_3">
                 <div class="v197_5"></div>
             </div>
@@ -21,16 +22,16 @@
             <div class="v197_65"></div>
             <div class="schedule-box"></div>
             <div class="today-box"></div>
-            <div class="day-box168"></div>
-            <div class="day-box172"></div>
-            <div class="day-box173"></div>
-            <div class="day-box174"></div>
-            <div class="day-box175"></div>
-            <div class="day-box176"></div>
-            <div class="day-box177"></div>
-            <div class="day-box181"></div>
-            <div class="day-box179"></div>
-            <div class="day-box180"></div>
+            <a href= "{% url 'routine_previous' %}"><div class="day-box168"></div></a>
+            <a href= "{% url 'routine_previous' %}"><div class="day-box172"></div></a>
+            <a href= "{% url 'routine_previous' %}"><div class="day-box173"></div></a>
+            <a href= "{% url 'routine_previous' %}"><div class="day-box174"></div></a>
+            <a href= "{% url 'routine_previous' %}"><div class="day-box175"></div></a>
+            <a href= "{% url 'routine_previous' %}"><div class="day-box176"></div></a>
+            <a href= "{% url 'routine_previous' %}"><div class="day-box177"></div></a>
+            <a href= "{% url 'routine_previous' %}"><div class="day-box179"></div></a>
+            <a href= "{% url 'routine_previous' %}"><div class="day-box180"></div></a>
+            <a href= "{% url 'routine_previous' %}"><div class="day-box181"></div></a>
             <div class="schedule-line1"></div>
             <div class="schedule-line2"></div>
             <div class="schedule-line3"></div>
@@ -79,5 +80,7 @@
             <span class="v197_144">11</span>
             <span class="v197_151">18</span>
             <span class="v197_158">25</span>
+            <div class="schedule-write-box"></div>
+        </div>
         </div>
 {% endblock %}
