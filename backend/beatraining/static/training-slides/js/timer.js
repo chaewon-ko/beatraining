@@ -28,7 +28,7 @@ const setrest = $("#doneBtn1").one("click", function () {
     clearInterval(GV.timer);
     GV.isPause = false;
 
-    var setRest = 10;
+    var setRest = 30;
 
     GV.timer = setInterval(function () {
         document.getElementById("setTimer").style.color =
